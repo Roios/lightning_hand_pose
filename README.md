@@ -22,3 +22,4 @@ She explains the idea of the project in the following tutorials:
 The tutorials are written in a very detailed and clear way that I will not reproduce them here.
 
 For this project, open-source [FreiHAND](https://lmb.informatik.uni-freiburg.de/resources/datasets/FreihandDataset.en.html) dataset is used.
+The dataset is not part of this repository. It should be downloaded and moved to the root of the repo.
