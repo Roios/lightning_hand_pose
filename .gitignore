@@ -127,3 +127,15 @@ dmypy.json
 
 # Pyre type checker
 .pyre/
+
+# VS Code workspace
+*.code-workspace
+
+# PyCharm
+.idea
+
+# Ignore database
+database/**
+
+# Ignore logs
+lightning_logs/**
