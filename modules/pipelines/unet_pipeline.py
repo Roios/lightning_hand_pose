@@ -21,10 +21,12 @@ class UnetPipeline(pl.LightningModule):
     def training_step(self, train_batch, batch_idx):
         x_hat = self.forward(train_batch['image'])
         loss = self.iou_loss(x_hat, train_batch['heatmaps'])
-        self.log('train_loss', loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
+        self.log('train_loss_step', loss, on_step=True, on_epoch=False, prog_bar=True, logger=True)
+        self.log('train_loss_epoch', loss, on_step=False, on_epoch=True, prog_bar=True, logger=True)
         return loss
 
     def validation_step(self, val_batch, batch_idx):
         x_hat = self.forward(val_batch['image'])
         loss = self.iou_loss(x_hat, val_batch['heatmaps'])
-        self.log('val_loss', loss,  on_step=False, on_epoch=True, prog_bar=True, logger=True)
+        self.log('val_loss_step', loss, on_step=True, on_epoch=False, prog_bar=True, logger=True)
+        self.log('val_loss_epoch', loss,  on_step=False, on_epoch=True, prog_bar=True, logger=True)
