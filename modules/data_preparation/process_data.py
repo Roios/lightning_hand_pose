@@ -10,7 +10,7 @@ import matplotlib.pyplot as plt
 from pathlib import Path
 
 # Dataset parameters
-N_KEYPOINTS = 21  # TODO like roberto
+N_KEYPOINTS = 21
 RAW_IMG_SIZE = 224
 MODEL_IMG_SIZE = 128
 DATASET_MEANS = [0.3950, 0.4323, 0.2954]
