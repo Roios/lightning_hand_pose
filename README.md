@@ -23,3 +23,7 @@ The tutorials are written in a very detailed and clear way that I will not repro
 
 For this project, open-source [FreiHAND](https://lmb.informatik.uni-freiburg.de/resources/datasets/FreihandDataset.en.html) dataset is used.
 The dataset is not part of this repository. It should be downloaded and moved to the root of the repo.
+
+## Closure
+
+I was able to train and run a model using the Pytorch Lightning framework. This repo is closed.
